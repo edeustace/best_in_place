@@ -1,6 +1,8 @@
 //= require jquery
 //= require best_in_place
 //= require jquery.purr
+//= require jquery.inplace.image.changer
+
 
 $(document).ready(function() {
   /* Activating Best In Place */
