@@ -10,7 +10,6 @@ gem 'jquery-rails'
 gem 'rdiscount'
 
 #add paperclip so we can test best in place image uploading
-#gem 'paperclip', '~> 2.4'
 gem 'paperclip', '2.3.10'
 
 gem 'ruby-debug19', :require => 'ruby-debug'
