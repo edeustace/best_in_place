@@ -11,7 +11,6 @@ module BestInPlace
       updating_attr = params[klass.underscore].keys.first
 
       if renderer = BestInPlace::DisplayMethods.lookup(klass, updating_attr)
-        debugger
         render :json => { renderer => obj.send(renderer)}.to_json
       else
         head :ok
