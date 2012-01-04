@@ -64,8 +64,18 @@
                             :type => :img,
                             :display_as => :avatar_thumb
                             %>
+                          </td>
+                        </tr>
+     <tr>
+      <td>audio</td>
+      <td id="avatar">
+        <%=  best_in_place @user,
+                            :audio,
+                            :type => :file,
+                            :display_as => :audio_url %>
       </td>
-  </table>
+    </tr>
+</table>
   <br />
   <hr />
   <p>Try the <b>features of Best In Place</b>:</p>

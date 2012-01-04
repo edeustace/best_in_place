@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
 
   has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }
+  has_attached_file :audio
 
   validates :name,
     :length => { :minimum => 2, :maximum => 24, :message => "has invalid length"},
@@ -26,5 +27,9 @@ class User < ActiveRecord::Base
   
   def avatar_thumb
     avatar.url(:thumb)
+  end
+
+  def audio_url
+    audio.url
   end
 end
